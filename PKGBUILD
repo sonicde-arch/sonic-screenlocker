@@ -1,7 +1,7 @@
 # Maintainer: artist for Sonic-DE
 
 pkgname=sonic-screenlocker
-pkgver=6.6.4
+pkgver=6.6.5
 _dirver=$(echo $pkgver | cut -d. -f1-3)
 pkgrel=1
 pkgdesc='Library and components for Sonic-DE secure lock screen architecture'
@@ -53,4 +53,4 @@ package() {
   DESTDIR="$pkgdir" cmake --install build
 }
 
-sha256sums=('8427e39838a43714040b3c9f6ac30d6d7676b7ef3975cdd5d0372a3199ea0e81')
+sha256sums=('8c188997f7f673012a3be842a4699ae5d56b3e4d2ade44337b97eb0a5cf885ad')
