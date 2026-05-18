@@ -1,6 +1,6 @@
 pkgbase = sonic-screenlocker
 	pkgdesc = Library and components for Sonic-DE secure lock screen architecture
-	pkgver = 6.6.5
+	pkgver = 6.6.5.1
 	pkgrel = 1
 	url = https://github.com/Sonic-DE/sonic-screenlocker
 	arch = x86_64
@@ -37,7 +37,7 @@ pkgbase = sonic-screenlocker
 	optdepends = kcmutils: configuration module
 	provides = kscreenlocker
 	conflicts = kscreenlocker
-	source = sonic-screenlocker-6.6.5.tar.gz::https://github.com/Sonic-DE/sonic-screenlocker/archive/refs/tags/6.6.5.tar.gz
-	sha256sums = 8c188997f7f673012a3be842a4699ae5d56b3e4d2ade44337b97eb0a5cf885ad
+	source = sonic-screenlocker-6.6.5.1.tar.gz::https://github.com/Sonic-DE/sonic-screenlocker/archive/refs/tags/6.6.5.1.tar.gz
+	sha256sums = 265716b87f68b21c1afac7685d6bd412bebe8364b8eb998ce2592d7c61ae1686
 
 pkgname = sonic-screenlocker
