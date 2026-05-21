@@ -40,7 +40,10 @@ optdepends=('kcmutils: configuration module')
 groups=(sonicde)
 conflicts=(kscreenlocker)
 provides=(kscreenlocker)
-source=("$pkgname-$pkgver.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz")
+source=("$pkgname-$pkgver.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz"
+        kde.pam
+        kde-fingerprint.pam
+        kde-smartcard.pam)
 
 build() {
   cmake -B build  -S $pkgname-$pkgver \
@@ -51,6 +54,10 @@ build() {
 
 package() {
   DESTDIR="$pkgdir" cmake --install build
+
+  install -Dm644 "$srcdir"/kde.pam "$pkgdir"/usr/lib/pam.d/kde
+  install -Dm644 "$srcdir"/kde-fingerprint.pam "$pkgdir"/usr/lib/pam.d/kde-fingerprint
+  install -Dm644 "$srcdir"/kde-smartcard.pam "$pkgdir"/usr/lib/pam.d/kde-smartcard
 }
 
 sha256sums=('a27ee17ab7e5469d9f75625cd194f739f645f235771092c0acd377e4bf8c3d76')
