@@ -53,4 +53,4 @@ package() {
   DESTDIR="$pkgdir" cmake --install build
 }
 
-sha256sums=('50888b168777f34d93d1dffcfe6e0efab9bb86e7166681d929aeb7217b40070c')
+sha256sums=('a27ee17ab7e5469d9f75625cd194f739f645f235771092c0acd377e4bf8c3d76')
