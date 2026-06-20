@@ -2,8 +2,8 @@
 # Contributor: Antonio Rojas <arojas@archlinux.org>
 
 pkgname=sonic-screenlocker
-pkgver=6.6.5.2
-pkgrel=3
+pkgver=6.7.0
+pkgrel=1
 pkgdesc='Library and components for secure lock screen architecture'
 arch=(x86_64)
 url='https://github.com/Sonic-DE/sonic-screenlocker'
@@ -44,7 +44,7 @@ source=("$pkgname-$pkgver.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz"
         kde.pam
         kde-fingerprint.pam
         kde-smartcard.pam)
-sha256sums=('a27ee17ab7e5469d9f75625cd194f739f645f235771092c0acd377e4bf8c3d76'
+sha256sums=('f3b83fb920eeb95ea1e2e0ad85315f4d2d045fa7366db7f136bf191701b9d60f'
             'adba7bb7c27eb3a572e5e9d3cea0dbeebe59d3634472d1863d14fe892cb13b2b'
             '32734b4e1ec8b7f7e32b6cb2d68285c5c4f15f53736bba085096e76095181241'
             '5d9c31cbf66e8e455b9559c929f184efd598f714743d5a1e6ce20adb44dc4b2d')
